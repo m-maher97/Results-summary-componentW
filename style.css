@@ -20,7 +20,7 @@ body {
     padding: 0;
     overflow: hidden;
     padding-bottom: 20px;
-    margin-bottom: 20PX;
+    margin-bottom: 20px; /* Adjusted for consistency */
 }
 
 .col1 {
@@ -82,14 +82,65 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Background colors based on the h4 color */
+.Reaction {
+    background-color: hsla(0, 100%, 90%, 0.336); /* Light version of Reaction color */
+}
+
+.Memory {
+    background-color: hsla(39, 100%, 90%, 0.288); /* Light version of Memory color */
+}
+
+.Verbal {
+    background-color: hsla(166, 100%, 90%, 0.315); /* Light version of Verbal color */
+}
+
+.Visual {
+    background-color: hsla(234, 84%, 90%, 0.301); /* Light version of Visual color */
 }
 
 .reactionc, .memoryc, .verbalc, .visualc {
     display: flex;
     align-items: center;
     gap: 10px;
+}
 
+/* Color settings for h4 based on icon color */
+.reactionc h4 {
+    color: hsl(0, 100%, 67%); /* Color for Reaction icon */
+}
+
+.memoryc h4 {
+    color: hsl(39, 100%, 56%); /* Color for Memory icon */
+}
+
+.verbalc h4 {
+    color: hsl(166, 100%, 37%); /* Color for Verbal icon */
+}
+
+.visualc h4 {
+    color: hsl(234, 85%, 45%); /* Color for Visual icon */
+}
+
+/* Color settings for h4 based on icon color */
+.reactionc h4 {
+    color: hsl(0, 100%, 67%); /* Example color for Reaction icon */
+}
+
+.memoryc h4 {
+    color: hsl(39, 100%, 56%); /* Example color for Memory icon */
+}
+
+.verbalc h4 {
+    color: hsl(166, 100%, 37%); /* Example color for Verbal icon */
+}
+
+.visualc h4 {
+    color: hsl(234, 85%, 45%); /* Example color for Visual icon */
 }
 
 .s80, .s92, .s61, .s72 {
