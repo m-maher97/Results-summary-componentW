@@ -1,0 +1,159 @@
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    border-radius: 15px;
+    box-shadow: 0 4px 50px #91919159;
+    width: 90%;
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 20PX;
+}
+
+.col1 {
+    background-color: #533AF6;
+    max-width: 300px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.score {
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #4734EE, #4926D0);
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.score h6 {
+    margin-top: 0;  
+    color: #9e9e9e;
+}
+
+.score h1 {
+    margin-top: 70px;  
+    margin-bottom: 0; 
+    color: white; 
+}
+
+.card h3 {
+    margin-bottom: 0;
+}
+
+.card p {
+    margin-top: 0;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px;
+}
+
+.Reaction, .Memory, .Verbal, .Visual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.reactionc, .memoryc, .verbalc, .visualc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.s80, .s92, .s61, .s72 {
+    margin-left: auto;
+}
+
+.Continue {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Continue a {
+    display: inline-block;
+    background-color: #533AF6;
+    color: white;
+    padding: 12px 64px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Continue a:hover {
+    background-color: #140655;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .col1, .col2 {
+        width: 100%;
+        max-width: none;
+        padding: 10px;
+        border-radius: 10px; /* Adjusted border-radius for mobile */
+    }
+
+    .score {
+        width: 150px;
+        height: 150px;
+    }
+
+    .score h1 {
+        margin-top: 50px;
+    }
+
+    .Continue a {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .score {
+        width: 120px;
+        height: 120px;
+    }
+
+    .score h1 {
+        margin-top: 30px;
+    }
+
+    .Continue a {
+        padding: 8px 20px;
+    }
+}
